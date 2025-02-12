@@ -1,0 +1,12 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+  <g id="icon">
+    <path d="M30,29.5H7c-0.276,0,-0.5,-0.224,-0.5,-0.5V9.5h24v19.5C30.5,29.276,30.276,29.5,30,29.5z" fill="#FFFFFF"/>
+    <path d="M30,2H2c-0.551,0,-1,0.449,-1,1v4h5v22c0,0.551,0.449,1,1,1h23c0.551,0,1,-0.449,1,-1V7V6V3C31,2.449,30.551,2,30,2zM25.376,3h3.306c0.137,0,0.211,0.154,0.124,0.256l-1.653,2.688c-0.064,0.075,-0.183,0.075,-0.247,0l-1.653,-2.688C25.165,3.154,25.24,3,25.376,3zM6,6H2V3h21.001L23,6H6zM7,29V7h23l0.001,22H7z" fill="#6D6E71"/>
+    <path d="M26.905,5.944l-1.653,-2.688c-0.087,-0.101,-0.013,-0.256,0.124,-0.256h3.306c0.137,0,0.211,0.154,0.124,0.256l-1.653,2.688C27.088,6.019,26.97,6.019,26.905,5.944z" fill="#FFFFFF"/>
+    <path d="M25,29h-1v-4h-5v4h-1v-4h-5v4h-1v-4H7v-1h5v-4H7v-1h5v-4H7v-1h5v-4h1v4h5v-4h1v4h5v-4h1v4h5v1h-5v4h5v1h-5v4h5v1h-5V29zM19,24h5v-4h-5V24zM13,24h5v-4h-5V24zM19,19h5v-4h-5V19zM13,19h5v-4h-5V19z" fill="#B4B4B5"/>
+    <rect x="7" y="7" width="23" height="3" fill="#3E79B4"/>
+    <rect x="2" y="3" width="21" height="3" fill="#FFFFFF"/>
+    <path d="M18,19h-5v-4h5V19z" fill="#EC5664" opacity="0.5"/>
+    <path d="M12,14v6h7v-6H12zM18,19h-5v-4h5V19z" fill="#CD4C32"/>
+  </g>
+</svg>
