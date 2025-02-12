@@ -1,0 +1,167 @@
+[
+    {
+        "xtype": "tabpanel",
+        "activeTab": 0,
+        "ui": "flat-light",
+        "anchor": "100% 100%",
+        "autoRender": true,
+        "items": [
+            {
+                "title": "#Attributes",
+                "iconCls": "g-icon-svg g-icon-svg_size_16 g-icon-m_color_tab gm-references-elements__icon-attributes",
+                "bodyPadding": "10",
+                "autoScroll": true,
+                "layout": "anchor",
+                "defaults": {
+                    "labelWidth": 130,
+                    "labelAlign": "right"
+                },
+                "items": [
+                    {
+                        "xtype": "textfield",
+                        "anchor": "100%",
+                        "maxLength": 100,
+                        "fieldLabel": "#Name",
+                        "name": "name",
+                        "allowBlank": false
+                    },
+                    {
+                        "xtype": "textfield",
+                        "anchor": "100%",
+                        "maxLength": 100,
+                        "fieldLabel": "#Type",
+                        "name": "type",
+                        "allowBlank": false
+                    },
+                    {
+                        "xtype": "textfield",
+                        "anchor": "100%",
+                        "maxLength": 255,
+                        "fieldLabel": "#Icon",
+                        "name": "icon",
+                        "allowBlank": true
+                    },
+                    {
+                        "xtype": "checkbox",
+                        "ui": "switch",
+                        "fieldLabel": "#Form field",
+                        "checked": true,
+                        "name": "isField"
+                    },
+                    {
+                        "xtype": "checkbox",
+                        "ui": "switch",
+                        "fieldLabel": "#Enabled",
+                        "checked": true,
+                        "name": "enabled"
+                    }
+                ]
+            },
+            {
+                "title": "#Properties",
+                "iconCls": "g-icon-svg g-icon-svg_size_16 g-icon-m_color_tab gm-references-elements__icon-properties",
+                "bodyPadding": "1",
+                "autoScroll": false,
+                "controller": "gm-be-references-elements-properties",
+                "layout": "fit",
+                "items": [
+                    {
+                        "xtype": "g-field-properties",
+                        "gridId": "gm-references-elements__properties",
+                        "name": "properties"
+                    },
+                    {
+                        "id": "gm-references-elements__properties",
+                        "xtype": "g-propertygrid",
+                        "nameColumnWidth": 200,
+                        "source": {},
+                        "sourceConfig": "@sourceConfig",
+                        "tbar": {
+                            "padding": 0,
+                            "height": 30,
+                            "defaults": {
+                                "ui": "form-tool",
+                                "margin": "0 1 0 1",
+                                "height": 28
+                            },
+                            "items": [
+                                {
+                                    "xtype": "button",
+                                    "tooltip": "#Add property",
+                                    "iconCls": "g-icon-svg g-icon-m_add g-icon-m_color_base g-icon-m_is-hover",
+                                    "handler": "onBtnShowProperties",
+                                    "window": {
+                                        "xtype": "window",
+                                        "iconCls": "g-icon-svg g-icon-svg_size_16 gm-references-elements__icon-properties",
+                                        "controller": "gm-be-references-elements-properties",
+                                        "title": "#Adding properties",
+                                        "close": "hide",
+                                        "width": 500,
+                                        "ghost": false,
+                                        "height": 160,
+                                        "modal": true,
+                                        "layout": "fit",
+                                        "items": [{
+                                            "xtype": "form",
+                                            "bodyPadding": 2,
+                                            "layout": "fit",
+                                            "items": [
+                                                {
+                                                    "xtype": "tagfield",
+                                                    "hideLabel": true,
+                                                    "name": "tags",
+                                                    "store": {
+                                                        "fields": ["id", "property"],
+                                                        "data": "@tags"
+                                                    },
+                                                    "encodeSubmitValue": true,
+                                                    "displayField": "property",
+                                                    "valueField": "id",
+                                                    "createNewOnEnter": false,
+                                                    "createNewOnBlur": false,
+                                                    "filterPickList": true,
+                                                    "queryMode": "local",
+                                                    "publishes": "value",
+                                                    "editable": true,
+                                                    "allowBlank": false
+                                                }
+                                            ],
+                                            "buttons": [
+                                                {
+                                                    "xtype": "button",
+                                                    "iconCls": "g-icon-svg g-icon_size_14 g-icon-m_add",
+                                                    "ui": "form",
+                                                    "text": "#Add",
+                                                    "handler": "onBtnAddProperties"
+                                                },
+                                                {
+                                                    "xtype": "button",
+                                                    "ui": "form-close",
+                                                    "text": "#Cancel",
+                                                    "handler": "onBtnCloseWindow"
+                                                }
+                                            ]
+                                        }]
+                                    }
+                                },
+                                {
+                                    "xtype": "button",
+                                    "tooltip": "#Remove selected property",
+                                    "iconCls": "g-icon-svg g-icon-svg_size_16 g-icon_cut",
+                                    "msgMustSelect": "#You need to select a property",
+                                    "handler": "onBtnRemoveProperty"
+                                },
+                                {
+                                    "xtype": "button",
+                                    "tooltip": "#Remove all properties",
+                                    "iconCls": "g-icon-svg g-icon-svg_size_16 g-icon_cleanup",
+                                    "handler": "onBtnRemoveProperties"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
