@@ -1,11 +1,11 @@
-# <img src="https://raw.githubusercontent.com/gearmagicru/gm-be-references-elements/refs/heads/master/assets/images/icon.svg" width="64px" height="64px" align="absmiddle"> Расширение (модуль) панели управления "Элементы интерфейса"
+# <img src="https://raw.githubusercontent.com/gearmagicru/gm-be-references-elements/refs/heads/main/assets/images/icon.svg" width="64px" height="64px" align="absmiddle"> Расширение (модуль) панели управления "Элементы интерфейса"
 
 Справочник элементов интерфейса Панели управления GM Panel.
 
 Этот модуль является расширением для [модуля "Справочники"](https://github.com/gearmagicru/gm-be-references).
 
 ## Скриншот
-<img src="https://github.com/gearmagicru/gm-be-references-elements/blob/master/assets/help/grid.png?raw=true">
+<img src="https://github.com/gearmagicru/gm-be-references-elements/blob/main/assets/help/grid.png?raw=true">
 
 ## Установка
 
